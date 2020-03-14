@@ -1,25 +1,29 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "heroku-postbuild": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tghlck/burger.git"
+    "url": "git+https://github.com/dvega920/burger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tghlck/burger/issues"
+    "url": "https://github.com/dvega920/burger/issues"
   },
-  "homepage": "https://github.com/tghlck/burger#readme",
+  "homepage": "https://github.com/dvega920/burger#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1"
+    "mysql": "^2.17.1",
+    "nodemon": "^2.0.2"
   }
 }

@@ -1,0 +1,12 @@
+.fa-hamburger{
+    font-size: 150px;
+    color: orange;
+}
+
+h1, h2, label{
+    color: white;
+}
+
+.leftside{
+    float: left;
+}
